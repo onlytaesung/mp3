@@ -1,0 +1,30 @@
+{
+  "name": "ipod",
+  "note": "휠을 빙글빙글 돌리면 위아래로 움직여요.\n가운데 버튼 = 선택\nMENU = 뒤로",
+  "songs": [
+    {
+      "id": "s1",
+      "t": "이거 안 들으면 못 잠",
+      "a": "unknown",
+      "d": 4,
+      "file": "audio/s1-mw3i3nxb.mp3",
+      "fname": "잘자-성호.mp3"
+    },
+    {
+      "id": "s2",
+      "t": "잠 안 온다니까 성호형이 불러준 노래",
+      "a": "unknown",
+      "d": 33,
+      "file": "audio/s2-mw3i3nxb.mp3",
+      "fname": "노래-성호.mp3"
+    },
+    {
+      "id": "smw3i2quouygp",
+      "t": "내가 친구랑 놀러갔다고 형이 투정부림",
+      "a": "unknown",
+      "d": 6,
+      "file": "audio/smw3i2quouygp-mw3i3nxb.mp3",
+      "fname": "나 놀아달라고-성호.mp3"
+    }
+  ]
+}
