@@ -204,6 +204,7 @@ function marquee(){ // long titles slide sideways like an old MP3 screen
   });
 }
 function render(){
+  if(view!=='np' && playing){ playing = false; audio.pause(); } // any menu screen = music stops
   if(view==='main' || view==='music'){
     const list = items();
     const rows = 7, start = Math.max(0, Math.min(sel-rows+1, list.length-rows)) , s = Math.max(0, Math.min(start, sel));
@@ -260,7 +261,7 @@ function step(dir){
   let n = shuffle ? Math.floor(Math.random()*SONGS.length) : (cur+dir+SONGS.length)%SONGS.length;
   play(n); render();
 }
-audio.addEventListener('ended',()=>step(1));
+audio.addEventListener('ended',()=>{ if(view==='np') step(1); else { playing=false; } });
 audio.addEventListener('loadedmetadata',()=>{ if(cur>=0 && isFinite(audio.duration)) SONGS[cur].d = Math.round(audio.duration); });
 
 setInterval(()=>{
